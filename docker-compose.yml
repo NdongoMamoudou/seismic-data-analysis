@@ -157,8 +157,8 @@ services:
     ports:
       - "10000:10000"
       - "10002:10002"
-    volumes:
-      - ./conf:/opt/hive/conf
+    # volumes:
+    #   - ./conf:/opt/hive/conf
     environment:
       - SERVICE_NAME=hiveserver2
       - HIVE_SITE_CONF=/opt/hive/conf
